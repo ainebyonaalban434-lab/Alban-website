@@ -1,0 +1,403 @@
+/* =========================
+   GENERAL PAGE SETTINGS
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #172554;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 28px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header hr {
+    width: 180px;
+    border: none;
+    border-top: 4px solid #38bdf8;
+    margin: 15px auto 0;
+}
+
+
+/* =========================
+   NAVIGATION BAR
+   ========================= */
+
+nav {
+    background-color: #0f172a;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 18px;
+}
+
+
+/* Navigation buttons */
+
+nav a {
+    display: inline-block;
+
+    min-width: 180px;
+
+    padding: 12px 20px;
+
+    text-align: center;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 17px;
+
+    border: 2px solid #38bdf8;
+
+    border-radius: 7px;
+
+    background-color: transparent;
+}
+
+
+/* Education button */
+
+nav a:nth-child(2) {
+    min-width: 265px;
+}
+
+
+/* Work Experience button */
+
+nav a:nth-child(3) {
+    min-width: 245px;
+}
+
+
+/* Gallery button */
+
+nav a:nth-child(4) {
+    min-width: 160px;
+}
+
+
+/* Mouse over button */
+
+nav a:hover {
+    background-color: #38bdf8;
+
+    color: #0f172a;
+}
+
+
+/* Current page */
+
+nav a.active {
+    background-color: #38bdf8;
+
+    color: #0f172a;
+}
+
+
+/* =========================
+   MAIN AREA
+   ========================= */
+
+main {
+    width: 90%;
+
+    max-width: 1400px;
+
+    margin: 28px auto;
+}
+
+
+/* =========================
+   MAIN CONTENT CARD
+   ========================= */
+
+.welcome {
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   TEXT AREA
+   ========================= */
+
+.text {
+    width: 100%;
+}
+
+
+/* =========================
+   HEADINGS
+   ========================= */
+
+.text h2 {
+    color: #172554;
+
+    font-size: 32px;
+
+    border-left: 7px solid #38bdf8;
+
+    padding-left: 15px;
+
+    margin-top: 0;
+
+    margin-bottom: 18px;
+}
+
+
+/* Space before About Me */
+
+.text h2:nth-of-type(2) {
+    margin-top: 35px;
+}
+
+
+/* Space before Website Sections */
+
+.text h2:nth-of-type(3) {
+    margin-top: 30px;
+}
+
+
+/* =========================
+   PARAGRAPHS
+   ========================= */
+
+.text p {
+    font-size: 19px;
+
+    line-height: 1.6;
+
+    margin-top: 0;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   PHOTO AREA
+   ========================= */
+
+.photo {
+    width: 100%;
+
+    text-align: center;
+
+    margin-top: 10px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   PHOTO
+   ========================= */
+
+.photo img {
+    display: block;
+
+    width: 250px;
+
+    height: 300px;
+
+    margin: 0 auto;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border: 3px solid #38bdf8;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   NAME BELOW PHOTO
+   ========================= */
+
+.photo h3 {
+    color: #172554;
+
+    font-size: 22px;
+
+    margin-top: 10px;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   STUDENT DESCRIPTION
+   ========================= */
+
+.photo p {
+    font-size: 16px;
+
+    line-height: 1.4;
+
+    margin-top: 0;
+
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   BLUE LINE BELOW PHOTO
+   ========================= */
+
+.photo p::after {
+    content: "";
+
+    display: block;
+
+    width: 70px;
+
+    height: 4px;
+
+    background-color: #38bdf8;
+
+    margin: 15px auto 0;
+}
+
+
+/* =========================
+   WEBSITE SECTIONS LIST
+   ========================= */
+
+.text ul {
+    padding-left: 30px;
+}
+
+.text li {
+    font-size: 18px;
+
+    margin-bottom: 7px;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #172554;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   MOBILE PHONE SCREEN
+   ========================= */
+
+@media (max-width: 800px) {
+
+    /* Navigation becomes vertical */
+
+    nav {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 10px;
+    }
+
+
+    nav a {
+        width: 90%;
+
+        min-width: 0 !important;
+    }
+
+
+    /* Main area */
+
+    main {
+        width: 94%;
+    }
+
+
+    /* Content */
+
+    .welcome {
+        padding: 25px;
+    }
+
+
+    /* Headings */
+
+    .text h2 {
+        font-size: 26px;
+    }
+
+
+    /* Paragraphs */
+
+    .text p {
+        font-size: 17px;
+    }
+
+
+    /* Photo */
+
+    .photo img {
+        width: 220px;
+
+        height: 270px;
+    }
+
+
+    /* Header */
+
+    header h1 {
+        font-size: 27px;
+    }
+
+}
