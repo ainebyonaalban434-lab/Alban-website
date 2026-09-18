@@ -1,106 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <title>My Gallery</title>
 
-    <!-- Connect to the CSS file -->
+    <title>Gallery</title>
+
+    <!-- Connect to the external CSS file -->
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-    <!-- Header -->
+    <!-- =========================
+         HEADER
+         ========================= -->
+
     <header>
-        <h1>MY GALLERY</h1>
+
+        <h1>MY PERSONAL PORTFOLIO</h1>
+
         <hr>
+
     </header>
 
 
-    <!-- Navigation -->
+    <!-- =========================
+         NAVIGATION BAR
+         ========================= -->
+
     <nav>
-        <a href="index.html">Home</a>
-        <a href="education.html">Education Background</a>
-        <a href="experience.html">Work Experience</a>
-        <a href="gallery.html">Gallery</a>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="education.html">
+            Education Background
+        </a>
+
+        <a href="experience.html">
+            Work Experience
+        </a>
+
+        <a href="gallery.html" class="active">
+            Gallery
+        </a>
+
     </nav>
+
 
     <hr>
 
 
-    <!-- Main Content -->
+    <!-- =========================
+         MAIN CONTENT
+         ========================= -->
+
     <main>
 
-        <h2>My Gallery</h2>
+        <section class="welcome">
 
-        <p>
-            Welcome to my gallery. This page contains some of
-            my photos, activities, projects and other memorable
-            moments.
-        </p>
+            <h2>My Gallery</h2>
 
-
-        <!-- First Image -->
-        <h3>My Photo</h3>
-
-        <img src="images/alba.jpeg"
-             alt="My Photo"
-             width="300">
+            <p>
+                This gallery contains selected photos from my
+                academic activities, personal interests and
+                experiences.
+            </p>
 
 
-        <!-- Second Image -->
-        <h3>Workshop Activities</h3>
+            <!-- =========================
+                 IMAGE GALLERY
+                 ========================= -->
 
-        <img src="images/Group.jpeg"
-             alt="Workshop Activities"
-             width="300">
-
-
-        <!-- Third Image -->
-        <h3>School Activity</h3>
-
-        <img src="images/hardware server system setup.jpeg"
-             alt="School Activity"
-             width="300">
+            <div class="gallery">
 
 
-        <!-- Fourth Image -->
-        <h3>Technology Activity</h3>
+                <!-- Row 1 -->
 
-        <img src="images/recess.jpeg"
-             alt="Technology Activity"
-             width="300">
+                <div class="gallery-item">
 
-         <!-- Fifth Image -->
-        <h3>Technology Activity</h3>
+                    <img src="images/photo.jpg" alt="Gallery image 1">
 
-        <img src="images/WhatsApp Image 2026-07-03 at 11.21.08 PM (2).jpeg"
-             alt="Technology Activity"
-             width="300">
+                    <p>My Photo</p>
 
-         <!-- Sixth Image -->
-        <h3>Sports archievements</h3>
+                </div>
 
-        <img src="images/WhatsApp Image 2026-07-07 at 11.35.28 PM.jpeg"
-             alt="Sports achievements"
-             width="300">
 
-         <!-- Seventh Image -->
-        <h3>Cricket club activity</h3>
+                <div class="gallery-item">
 
-        <img src="images/IMG-20251115-WA0114.jpg"
-             alt="Cricket club activity"
-             width="300">
+                    <img src="images/Group.jpeg" alt="Gallery image 2">
+
+                    <p>Academic Activity</p>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img src="images/alba.jpeg" alt="Gallery image 3">
+
+                    <p>Personal Activity</p>
+
+                </div>
+
+
+                <!-- Row 2 -->
+
+                <div class="gallery-item">
+
+                    <img src="images/hardware server system setup.jpeg" alt="Gallery image 4">
+
+                    <p>School Activity</p>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img src="images/recess.jpeg" alt="Gallery image 5">
+
+                    <p>Technology</p>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img src="images/WhatsApp Image 2026-09-09 at 6.33.31 PM.jpeg" alt="Gallery image 6">
+
+                    <p>Project Activity</p>
+
+                </div>
+
+
+                <!-- Row 3 -->
+
+                <div class="gallery-item">
+
+                    <img src="images/WhatsApp Image 2026-07-07 at 11.35.28 PM.jpeg" alt="Gallery image 7">
+
+                    <p>Academic Life</p>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img src="images/IMG-20260331-WA0038_1.jpg" alt="Gallery image 8">
+
+                    <p>Personal Interest</p>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img src="images/IMG-20260522-WA0019.jpg" alt="Gallery image 9">
+
+                    <p>Memories</p>
+
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
 
 
-    <!-- Footer -->
+    <!-- =========================
+         FOOTER
+         ========================= -->
+
     <footer>
+
         <p>
             © 2026 Ainebyona Alban. All Rights Reserved.
         </p>
+
     </footer>
+
 
 </body>
 
